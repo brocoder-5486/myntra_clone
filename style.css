@@ -14,7 +14,12 @@ a{
     color:black;
 }
 
-
+sup{
+    vertical-align: super;
+    font-size:0.6rem ;
+    margin-left: 0.5em;
+    color: red;
+}
 
 .title{
     padding: 1.5em;
@@ -28,6 +33,11 @@ a{
     margin:0;
     padding:0.9em 0;
     box-shadow: 10px 5px 5px #EEEEEE;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color:white;
+    
 }
 
 .nav_container{
@@ -38,14 +48,15 @@ a{
 }
 
 .nav_container>img{
-    width:80px;
-    height:55px;
+    width:4.5em;
+    min-height:55px;
     align-self: center;
+    /* border: 2px solid yellow; */
 }
 
-ul{
+.nav_container ul{
     padding:0;
-    width:700px;
+    width:500px;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -71,6 +82,32 @@ ul{
     
 }
 
+.nav_icons{
+    width:100%;
+    max-width:12em;
+    /* border: 2px solid green; */
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.nav_icons>div>img{
+    width:1.5em;
+    /* border: 1px solid blue; */
+    
+}
+
+.nav_icons>div{
+    text-align: center;
+    font-size:small;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+
 /* .search_box > button{
     margin-left: 3px;
     width:20px;
@@ -79,6 +116,7 @@ ul{
 
 .main_sec{
     margin-top: 0.7em;
+    margin-bottom: 1.5em;
 }
 
 .img_sec{
@@ -104,15 +142,57 @@ ul{
     align-items: center;
 }
 
-.footer_container{
+/* .footer_container{
     width:100%;
     max-width: 1200px;
     margin: 0 auto;
+    font-weight: 300;
+} */
+
+.footer{
+    padding: 0.5em 0.9em;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-evenly;
 }
 
-/* /pseudo */
+.footer ul{
+    list-style-type: none;
+    padding: 0.5em;
+}
 
-.search_box:hover{
-    border-style: none;
-    border-radius: 5px;
+.exp_links{
+    height: 12em;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.exp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.exp .exp_img{
+    margin-top: 1.5em;
+}
+
+.links span{
+    margin:1.5em 0.5em;
+}
+
+.exp_links img{
+    margin-right: 10px;
+    height:42px;
+}
+
+.keep_in_touch img{
+    margin-top: 0.5em;
+}
+
+.user_exp{
+    padding: 0.5em 0.9em;
+    margin: 0 auto;   
 }
